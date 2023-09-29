@@ -3,11 +3,11 @@ class Queue {
     this.queue = [];
   }
   enqueue(element) {
-    return this.queue.push(element);
+    return this.queue.unshift(element);
   }
   dequeue() {
     if (this.queue.length > 0) {
-      return this.queue.shift();
+      return this.queue.pop();
     }
   }
   peek() {
@@ -32,7 +32,7 @@ counter.enqueue(2);
 counter.enqueue(3);
 
 // get last element
-console.log(counter.peek()); // 3
+console.log(counter.peek()); // 1
 
 // remove
 console.log(counter.dequeue()); // 1
