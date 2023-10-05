@@ -43,3 +43,5 @@ console.log(counter.size()); // 1
 
 counter.clear();
 console.log(counter.size()); // 0
+
+//https://www.codewars.com/kata/55a9c0994cb7e284d500005e

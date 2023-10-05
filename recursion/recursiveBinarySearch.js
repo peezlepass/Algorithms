@@ -1,4 +1,4 @@
-function recursiveBinarySearch(arr, target, start, end) {
+function recursiveBinarySearch(arr, target, start = 0, end = arr.length) {
   let middle = Math.floor((start + end) / 2);
   if (target === arr[middle]) {
     return middle;
@@ -10,11 +10,4 @@ function recursiveBinarySearch(arr, target, start, end) {
   }
 }
 
-console.log(
-  recursiveBinarySearch(
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    5,
-    0,
-    [1, 2, 3, 4, 5, 6, 7, 8, 9].length
-  )
-);
+console.log(recursiveBinarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9], 0));
